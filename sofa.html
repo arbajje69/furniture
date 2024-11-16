@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofa Collection</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.sofa-collection {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sofa-collection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sofa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.sofa-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sofa-item:hover {
+  transform: scale(1.05);
+}
+
+.sofa-img-container {
+  position: relative;
+}
+
+.sofa-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sofa-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+</style>
+</head>
+<body>
+  <section class="sofa-collection">
+    <h2>Our Sofa Collection</h2>
+    <div class="sofa-grid">
+      <div class="sofa-item">
+        <div class="sofa-img-container">
+          <img src="sofa1.jpg" alt="Luxury Sofa">
+          <span class="price-tag">$500</span>
+        </div>
+        <p>Luxury Sofa</p>
+      </div>
+      <div class="sofa-item">
+        <div class="sofa-img-container">
+          <img src="sofa2.jpg" alt="Modern Sofa">
+          <span class="price-tag">$450</span>
+        </div>
+        <p>Modern Sofa</p>
+      </div>
+      <div class="sofa-item">
+        <div class="sofa-img-container">
+          <img src="sofa3.jpg" alt="Classic Leather Sofa">
+          <span class="price-tag">$800</span>
+        </div>
+        <p>Classic Leather Sofa</p>
+      </div>
+      <div class="sofa-item">
+        <div class="sofa-img-container">
+          <img src="sofa4.jpg" alt="Minimalist Sofa">
+          <span class="price-tag">$400</span>
+        </div>
+        <p>Minimalist Sofa</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

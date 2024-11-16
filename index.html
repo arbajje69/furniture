@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Furniture Store</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header nav ul li a:hover {
+  color: #f4a261;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #f4a261;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  padding: 2rem 1rem;
+  /* background: #f1f1f1; */
+   
+  background-image: url(home1.webp);
+}
+
+.gallery h2 {
+background-image: url(home1.webp);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery-item {
+  width: 200px;
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  /* background-image: url(home1.webp); */
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Top Furniture</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="chair.html">Chairs</a></li>
+        <li><a href="sofa.html">Sofas</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Top Furniture</h1>
+    <p>Your one-stop shop for premium furniture</p>
+  </section>
+
+  <section id="all-furniture" class="gallery">
+    <h2>Explore Our Furniture</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="sofa.jpg" alt="Sofa">
+        <p>Luxury Sofas</p>
+      </div>
+      <div class="gallery-item">
+        <img src="chair1.jpg" alt="Chair">
+        <p>Comfortable Chairs</p>
+      </div>
+      <div class="gallery-item">
+        <img src="dining.jpg" alt="Dining Table">
+        <p>Elegant Dining Tables</p>
+      </div>
+      <div class="gallery-item">
+        <img src="makeup-set.jpg" alt="Makeup Set">
+        <p>Makeup Sets</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chairs">
+    <h2>Chairs Collection</h2>
+    <p>Discover a range of comfortable and stylish chairs for your home and office.</p>
+  </section>
+
+  <section id="sofas">
+    <h2>Sofa Collection</h2>
+    <p>Experience luxury and comfort with our premium sofa collection.</p>
+  </section>
+
+  <section id="shop">
+    <h2>Shop Now</h2>
+    <p>Browse through our entire collection and find the perfect piece for your space.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@topfurniture.com</p>
+    <p>Phone: +123-456-7890</p>
+  </section>
+</body>
+</html>

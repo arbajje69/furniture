@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chair Collection</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.chair-collection {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chair-collection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chair-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.chair-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.chair-item:hover {
+  transform: scale(1.05);
+}
+
+.chair-img-container {
+  position: relative;
+}
+
+.chair-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chair-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+</style>
+</head>
+<body>
+  <section class="chair-collection">
+    <h2>Our Chair Collection</h2>
+    <div class="chair-grid">
+      <div class="chair-item">
+        <div class="chair-img-container">
+          <img src="chair.jpg" alt="Modern Chair">
+          <span class="price-tag">$120</span>
+        </div>
+        <p>Modern Chair</p>
+      </div>
+      <div class="chair-item">
+        <div class="chair-img-container">
+          <img src="chair2.webp" alt="Classic Wooden Chair">
+          <span class="price-tag">$150</span>
+        </div>
+        <p>Classic Wooden Chair</p>
+      </div>
+      <div class="chair-item">
+        <div class="chair-img-container">
+          <img src="chair3.jpg" alt="Luxury Recliner">
+          <span class="price-tag">$300</span>
+        </div>
+        <p>Luxury Recliner</p>
+      </div>
+      <div class="chair-item">
+        <div class="chair-img-container">
+          <img src="chair4.jpg" alt="Minimalist Chair">
+          <span class="price-tag">$90</span>
+        </div>
+        <p>Minimalist Chair</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
